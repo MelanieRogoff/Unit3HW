@@ -1,0 +1,21 @@
+#genStart {
+    float: left;
+    margin-right: 20px;
+    padding-right: 500px;
+    margin-left: 15px;
+}
+
+#copyToClipboard {
+    float: right;
+    margin-right: 20px;
+    padding-right: 500px;
+    margin-left: 15px;
+}
+
+h1 {
+    text-align: left;
+}
+
+.text {
+    left: -500px;
+}
