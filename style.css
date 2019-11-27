@@ -19,3 +19,8 @@ h1 {
 .text {
     left: -500px;
 }
+
+#pika {
+    background-image: url("pikafly.jpg");  
+    size: overflow;  
+}
