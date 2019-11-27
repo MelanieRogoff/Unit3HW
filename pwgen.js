@@ -12,6 +12,7 @@
 
     //Create empty array for user pw. Create array values, set ranNum/pwNum/passwordLength to 0 - they'll change. 
     //Put a let for endpw and blank quotations so that the value of endpw will be filled with a string. 
+    //Declare the below variables FIRST, before anything else, because this declares them globally so that the functios will definitely access them inside the loops. 
     let user = [];
     let spArray;
     let upArray;
@@ -55,7 +56,7 @@
             password();
         }
         
-        //Call the function that generates the password
+        //Call the function that generates the password. 
         finalpw();
 
         function finalpw() {
@@ -79,11 +80,33 @@
             user = numArray;
             console.log(user);
         };
+
+        //Use this for loop to go through each if statement and generate a random PW
         for (let i = 0; i < pwLength; i++) {
             ranNum = Math.floor(Math.random()*user.length);
+            //The += is syntax for concatenating, which we need to do with this. user[ranNum] takes the number the user input for password length and then adds the correct amount of characters/letters to the endpw string. 
             endpw += user[ranNum];
         };
+        //Console logging endpw so we can see what it actually generated
         console.log(endpw);
-     }   
+
+        //When clicking the Generate Password button, this shows the user their password
+        document.getElementById("genStart").onclick = function() {myFunction()};
+
+        function myFunction() {
+            //This links to the id of pass which is in the <textarea> tag in the HTML file, and it grabs the value of the endpw (the final result) and puts it into the text box!
+            document.getElementById("pass").value = endpw;
+        }
+    }
 }
+//Copy to clipboard
+
+//This is the ID for the clipboard button
+document.getElementById("copyToClipboard").addEventListener("click", ()=> {
+   //This is the id for the <textarea> tag
+    document.getElementById("pass").select();
+    //The "copy" text will do the copy command
+    document.execCommand("copy");
+})
+        
     password();        
