@@ -1,19 +1,27 @@
 #genStart {
     float: left;
     margin-right: 20px;
-    padding-right: 500px;
     margin-left: 15px;
 }
 
-#copyToClipboard {
-    float: right;
-    margin-right: 20px;
-    padding-right: 500px;
-    margin-left: 15px;
+#color {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 500px;
+    min-width: 200px;
+    transform: translate(50%, 60%, 50%, 60%);
+}
+
+#pass {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 400px;
+    min-width: 200px;
 }
 
 h1 {
     text-align: left;
+    padding-top: -20px;
 }
 
 .text {

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Password Generator</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,22 +12,28 @@
 
 <body id="pika">
   
-  <div class="container pt-5">
-    <div id="color" class="jumbotron">
+  <div class="container pt-5 flex-container">
+    <div id="color" class="jumbotron vertical-center">
       <div class="row">
           <h1>Generate a Password</h1>
             </div>
+     <!--Text box start-->
     <div class="row">
-      <div class="offset-2 offset-md-3 offset-lg-4">
+      <div class="flex-column">
         <textarea name="password" class="text" id="pass" cols="52" rows="5">
         </textarea>
+        <!--Text box end-->
       </div>
+      
+        <!--Buttons start-->
       <div class="row">
-        <div class="offset-2 offset-md-3 offset-lg-4">
+        <!--This affects position of buttons-->
+        <div class="col-md-12 flex-column">
           <button id="genStart" class="btn btn-md btn-danger p-2 m-2">Generate Password</button>
           <button id="copyToClipboard" class="btn btn-md btn-secondary p-2 m-2">Copy to Clipboard</button>
         </div>
       </div>
+       <!--Buttons end-->
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
