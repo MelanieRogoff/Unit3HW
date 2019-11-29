@@ -13,22 +13,66 @@
 }
 
 #pass {
-    padding-left: 50px;
-    padding-right: 50px;
-    max-width: 400px;
-    min-width: 200px;
+    padding-right: 20px;
+    max-width: 240px;
+    min-width: 130px;
+    padding-bottom: 50px;
+    border: 1px dashed pink;
 }
 
-h1 {
+h2 {
     text-align: left;
     padding-top: -20px;
-}
-
-.text {
-    left: -500px;
 }
 
 #pika {
     background-image: url("pikafly.jpg");  
     size: overflow;  
 }
+  @media screen and (min-width: 766px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 30px;
+    }
+    #pass {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+    
+    #btns {
+        margin-left: 20px;
+    }
+
+    h2 {
+        margin-left: 40px;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 10px;
+    }
+    #pass {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    
+    #btns {
+        align-items: center;
+        margin-left: 60px;
+    }
+
+    h2 {
+        margin-left: 4px;
+        text-align: center;
+    }
+  }
