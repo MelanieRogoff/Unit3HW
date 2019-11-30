@@ -23,7 +23,9 @@
     let passwordLength = 0;
     let endpw = "";
 
-    password();        
+
+    const genBegin = document.getElementById("genStart");
+    genBegin.addEventListener("click", password);
 
     function password() {
         let pwLength = prompt("How  many characters would you like in your password? Choose between 8 & 128.");
@@ -88,19 +90,17 @@
             ranNum = Math.floor(Math.random()*user.length);
             //The += is syntax for concatenating, which we need to do with this. user[ranNum] takes the number the user input for password length and then adds the correct amount of characters/letters to the endpw string. 
             endpw += user[ranNum];
-        };
+            //When clicking the Generate Password button, this shows the user their password
+            document.getElementById("pass").value = endpw;
+        }
         //Console logging endpw so we can see what it actually generated
         console.log(endpw);
 
         //When clicking the Generate Password button, this shows the user their password
-        document.getElementById("genStart").onclick = function() {myFunction()};
-
-        function myFunction() {
-            //This links to the id of pass which is in the <textarea> tag in the HTML file, and it grabs the value of the endpw (the final result) and puts it into the text box!
-            document.getElementById("pass").value = endpw;
-        }
+        document.getElementById("genStart").onclick = function() {password()};
     }
 }
+
 //Copy to clipboard
 
 //This is the ID for the clipboard button
