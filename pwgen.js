@@ -23,6 +23,8 @@
     let passwordLength = 0;
     let endpw = "";
 
+    password();        
+
     function password() {
         let pwLength = prompt("How  many characters would you like in your password? Choose between 8 & 128.");
 
@@ -109,4 +111,3 @@ document.getElementById("copyToClipboard").addEventListener("click", ()=> {
     document.execCommand("copy");
 })
         
-    password();        
