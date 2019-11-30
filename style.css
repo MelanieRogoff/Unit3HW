@@ -26,7 +26,7 @@ h2 {
 
 #pika {
     background-image: url("pikafly.jpg");  
-    size: overflow;  
+    size: cover;  
 }
   @media screen and (min-width: 766px) {
     .container {
