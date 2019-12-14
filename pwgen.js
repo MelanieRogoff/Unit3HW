@@ -12,7 +12,7 @@
 
     //Create empty array for user pw. Create array values, set ranNum/pwNum/passwordLength to 0 - they'll change. 
     //Put a let for endpw and blank quotations so that the value of endpw will be filled with a string. 
-    //Declare the below variables FIRST, before anything else, because this declares them globally so that the functios will definitely access them inside the loops. 
+    //Declare the below variables FIRST, before anything else, because this declares them globally so that the functions will definitely access them inside the loops. 
     let user = [];
     let spArray;
     let upArray;
@@ -31,7 +31,7 @@
         let pwLength = prompt("How  many characters would you like in your password? Choose between 8 & 128.");
 
         //If input isn't within 8 - 128 chars, while loop will ask until user inputs the correct amount. Yo While statements are executed AS LONG AS WHAT IS IN THE PARENTHESIS IS TRUE. 
-        if (pwLength <= 7 || pwLength >= 129) {
+        while (pwLength <= 7 || pwLength >= 129) {
             pwLength = prompt("Try again, please. Enter how many characters you would like - they must be a number between 8 and 128.");
         }
 
