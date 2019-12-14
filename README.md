@@ -18,8 +18,8 @@ Sample Screenshots:
 
 * Desktop Format: 
 
-![Desktop](Desktop/Unit3HW/pwdesk)
+![Desktop](pwdesk.png)
 
 * Mobile Format:
 
-![Mobile](Desktop/Unit3HW/pwmobile)
+![Mobile](pwmobile.png)
